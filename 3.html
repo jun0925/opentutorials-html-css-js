@@ -24,7 +24,9 @@
         <input type="button" value="night" onclick="nightDayHandler(this)">
         <script>
             var Body = {
-                
+                setColor: function(color){
+                    document.querySelector('body').style.color = color;
+                }
             }
             function LinkSetColor(color){
                 var alist = document.querySelectorAll('a');
