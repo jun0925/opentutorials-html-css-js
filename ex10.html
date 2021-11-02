@@ -30,7 +30,7 @@
     <h2>Property & Method</h2>
     <script>
         coworkers.showAll = function(){
-            for(var key in coworkers){
+            for(var key in this){
                 document.write(key + ' : ' + coworkers[key] + '<br />');
             }
         }
