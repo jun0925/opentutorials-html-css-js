@@ -31,6 +31,9 @@
                     i = i + 1;
                 }
             }
+            function setColor(color){
+                document.querySelector('body').style.color = color;
+            }
             function nightDayHandler(self){
                 var target = document.querySelector('body');
                 if( self.value === 'night'){
