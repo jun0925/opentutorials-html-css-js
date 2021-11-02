@@ -23,6 +23,9 @@
         </div>
         <input type="button" value="night" onclick="nightDayHandler(this)">
         <script>
+            var Body = {
+                
+            }
             function LinkSetColor(color){
                 var alist = document.querySelectorAll('a');
                 var i = 0;
@@ -34,23 +37,23 @@
             function BodySetColor(color){
                 document.querySelector('body').style.color = color;
             }
-            function bodySetBackgroundColor(color){
+            function BodySetBackgroundColor(color){
                 document.querySelector('body').style.backgroundColor = color;
             }
             function nightDayHandler(self){
                 var target = document.querySelector('body');
                 if( self.value === 'night'){
-                    bodySetBackgroundColor('black');
-                    BodySetColor('white');
+                    Body.setBackgroundColor('black');
+                    Body.setColor('white');
                     self.value = 'day';
 
-                    LinkSetColor('powderblue');
+                    Links.setColor('powderblue');
                 }else{
-                    bodySetBackgroundColor('white');
-                    BodySetColor('black');
+                    Body.setBackgroundColor('white');
+                    Body.setColor('black');
                     self.value = 'night';
 
-                    LinkSetColor('blue');
+                    Links.setColor('blue');
                 }
             }
         </script>
